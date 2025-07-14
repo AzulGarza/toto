@@ -2,6 +2,11 @@
 
 > This is a personal fork of [toto](https://github.com/DataDog/toto), maintained to support custom changes for [timecopilot](https://github.com/AzulGarza/TimeCopilot/) and publish pypi wheels at [`timecopilot-toto`](https://pypi.org/project/timecopilot-toto/). It may diverge from upstream.
 
+## Credits
+
+This project is a fork of by Original Author(s).  
+All credit for the original code belongs to them. This fork is maintained independently to support TimeCopilot-specific changes.
+
 # Toto - Time Series Optimized Transformer for Observability
 
 
