@@ -6,9 +6,13 @@ PYTHON_VERSION = 3.13
 # Import statement to test
 IMPORT_STATEMENT = from toto.model.toto import Toto as TotoModel
 
+clean:
+	rm -rf *.egg-info
+	rm -rf dist/
+
 # Build the wheel and sdist
 build:
-	uv build
+	uv build -n
 
 # Test importing from built wheel
 test-wheel:
@@ -27,5 +31,5 @@ after-publish-test:
 	uv run --isolated --no-project -p $(PYTHON_VERSION) --with timecopilot-toto -- python -c "$(IMPORT_STATEMENT)"
 
 # All steps
-release: build test-wheel test-sdist publish after-publish-test
+release: clean build test-wheel test-sdist publish after-publish-test
 

@@ -1,6 +1,6 @@
 [project]
 name = "timecopilot-toto"
-version = "0.1.0"
+version = "0.1.1"
 dynamic = ["dependencies"]
 
 [tool.setuptools.dynamic]
